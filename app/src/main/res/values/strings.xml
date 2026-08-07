@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ZeniInvestment</string>
+    <string name="btn_init">Simular</string>
 </resources>

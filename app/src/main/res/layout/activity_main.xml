@@ -21,7 +21,6 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
 
-
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPagerInit"
         android:layout_width="0dp"
@@ -32,6 +31,28 @@
         app:layout_constraintTop_toBottomOf="@id/imageView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/dotsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/viewPagerInit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_int"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_init"
+        android:textSize="20sp"
+        android:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dotsLayout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
