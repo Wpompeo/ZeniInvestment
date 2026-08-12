@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">ZeniInvestment</string>
     <string name="btn_init">Simular</string>
+    <string name="txt_input_money">R$ 0,00</string>
+    <string name="txt_input_aporte">R$ 0,00</string>
+    <string name="title_second_page">Simule seu investimento</string>
+    <string name="sub_title_two_">invista nos seus sonhos</string>
+    <string name="value_init">R$ 0,00</string>
+    <string name="txt_input_fees">10,00</string>
+    <string name="txt_input_years">5</string>
+    <string name="txt_value_init">Valor inicial</string>
+    <string name="txt_contribution">Aporte inicial</string>
+    <string name="txt_fees">Taxa de juros (% ao ano)</string>
+    <string name="txt_years">Tempos (anos)</string>
 </resources>

@@ -1,6 +1,8 @@
 package com.wts.zeniinvestment
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
@@ -119,6 +121,12 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         )
+
+        val btnInit = findViewById<Button>(R.id.btn_int)
+        btnInit.setOnClickListener {
+           val intent = Intent(this, calculate::class.java)
+            startActivity(intent)
+        }
 
 
     }
