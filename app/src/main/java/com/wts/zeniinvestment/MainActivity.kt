@@ -124,7 +124,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnInit = findViewById<Button>(R.id.btn_int)
         btnInit.setOnClickListener {
-           val intent = Intent(this, calculate::class.java)
+           val intent = Intent(this, Calculate::class.java)
             startActivity(intent)
         }
 

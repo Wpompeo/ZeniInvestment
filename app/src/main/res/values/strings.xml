@@ -12,4 +12,6 @@
     <string name="txt_contribution">Aporte inicial</string>
     <string name="txt_fees">Taxa de juros (% ao ano)</string>
     <string name="txt_years">Tempos (anos)</string>
+    <string name="btn_advance">Avançar</string>
+    <string name="title_result">Resultado da Simulçao</string>
 </resources>

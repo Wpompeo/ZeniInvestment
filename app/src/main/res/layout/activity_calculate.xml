@@ -5,14 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".calculate"
+    tools:context=".Calculate"
     android:background="@color/white">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txt_input_money"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="60dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         app:hintEnabled="false"
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         app:hintEnabled="false"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sub_title_two_"
-        android:textStyle="italic"
+        android:textStyle="italic|bold"
         android:textColor="@color/yellow"
 
         android:textSize="18sp"
@@ -87,7 +87,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:hintEnabled="false"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_input_contribution">
@@ -109,7 +109,7 @@
         android:layout_height="wrap_content"
         app:hintEnabled="false"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -178,5 +178,17 @@
         app:drawableStartCompat="@drawable/calendar"
         app:layout_constraintBottom_toTopOf="@+id/txt_input_time"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_calc"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:text="@string/btn_advance"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_input_time" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ZeniInvestment">
         <activity
-            android:name=".calculate"
+            android:name=".Result"
+            android:exported="false" />
+        <activity
+            android:name=".Calculate"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
