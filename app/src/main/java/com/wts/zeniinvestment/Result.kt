@@ -16,5 +16,24 @@ class Result : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val initialValue =
+            intent.getDoubleExtra("initialValue", 0.0)
+
+        val totalContribution =
+            intent.getDoubleExtra("totalContribution", 0.0)
+
+        val totalInvested =
+            intent.getDoubleExtra("totalInvested", 0.0)
+
+        val totalInterest =
+            intent.getDoubleExtra("totalInterest", 0.0)
+
+        val finalBalance =
+            intent.getDoubleExtra("finalBalance", 0.0)
+
+        val years =
+            intent.getIntExtra("years", 0)
+
+
     }
 }
