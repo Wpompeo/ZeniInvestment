@@ -14,4 +14,11 @@
     <string name="txt_years">Tempos (anos)</string>
     <string name="btn_advance">Avançar</string>
     <string name="title_result">Resultado da Simulçao</string>
+    <string name="txt_gain">Lucro obtido</string>
+    <string name="txt_cumulative_total">Valor final acumulado</string>
+    <string name="txt_investment_years">após 10 anos de investimento</string>
+    <string name="txt_total_invested">Total investido</string>
+    <string name="txt_summary_by_year">☷ Resumo por Ano</string>
+    <string name="icon_final">TODO</string>
+    <string name="btn_finish">Finalizar</string>
 </resources>

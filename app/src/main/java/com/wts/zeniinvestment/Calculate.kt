@@ -61,6 +61,7 @@ class Calculate : AppCompatActivity() {
 
                 val monthTotal = editYearsValue * 12
                 val simulation = mutableListOf<InvestmentMonth>()
+                val annualResults = mutableListOf<Double>()
 
                 for (month in 1..monthTotal) {
 
@@ -83,10 +84,15 @@ class Calculate : AppCompatActivity() {
                         InvestmentMonth(
                             month = month,
                             contribution = editContributionValue,
-                            interest = monthTaxa,
+                            interest = monthsFees,
                             balance = balance
                         )
                     )
+
+                    //final cada ano
+                    if(month % 12 == 0){
+                        annualResults.add(balance)
+                    }
                 }
                 val totalInvested = editMoneyValue + totalContribution
                 val finalBalance = balance
@@ -98,6 +104,9 @@ class Calculate : AppCompatActivity() {
                 intent.putExtra("totalInterest", totalFees)
                 intent.putExtra("finalBalance", finalBalance)
                 intent.putExtra("years", editYearsValue)
+
+                //resultado de cada ano
+                intent.putExtra("annualResults", annualResults.toDoubleArray())
 
                 startActivity(intent)
 
